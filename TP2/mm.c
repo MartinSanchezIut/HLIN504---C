@@ -20,7 +20,7 @@ mm mm_creer() {
 
 	for (int i = 0; i < TAILLE ; ++i)
 	{
-		jeu*+i =   '2' ; //rand() % 10;
+		//jeu*+i =   '2' ; //rand() % 10;
 	}
 
 	return jeu;

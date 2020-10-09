@@ -15,14 +15,23 @@ int main(int argc, char const *argv[]){
 
 	int size = lseek(fd, 0, SEEK_END) ;
 
+	int bla = 0;
 
-	for (int i = 0; i < size * 16; i=i+16)	{
-		
-		printf("%8.8x : %i \n", i, 'a');
-	}
+	char buffer[1024] ;
+	int nbread;
+	do	{
+		nbread = read(fd, buffer, 1024) ;
+
+		printf("%8.8x %i :", bla);
+		for (int i = 0; i < nbread; ++i) {
+			printf("%c ", buffer[i]);
+		}
+		printf("\n");
+
+		bla++;
 
 
-
+	} while (nbread == 1024);
 
 	return 0;
 }

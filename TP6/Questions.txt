@@ -1,0 +1,16 @@
+TP 6 :
+
+Ex 1:
+  1.  2K / 4 = 2^9 Add par block d'addresses
+    2 * 2^9^3 = 2^28 block de data
+    2^28 * 2^11 = 2^39 octet max tripple indirection
+    
+    donc max = 2^32-1
+    
+  2. Taille du système de fichier
+  3. Table des i-node pleine
+  
+  
+Ex 2:
+  1. l = link  i-node Lien simbolique
+     fstat pour un fichier déja ouvert
